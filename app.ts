@@ -21,7 +21,7 @@ serve(async (req) => {
         })
         return new Response(JSON.stringify({
             code: 200,
-            ahadithNumber: ahadith.length,
+            count: ahadith.length,
             ahadith: ahadith.slice(0, ahadith.length - 1)
         }), {
             headers: { "content-type": "application/json" },
